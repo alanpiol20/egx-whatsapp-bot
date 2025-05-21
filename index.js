@@ -60,8 +60,16 @@ Also, please:
   } else if (incomingMsg === '3') {
     msg.body("Fuel Up Instructions:\n- Ensure you fill up with DIESEL only\n- Pay if needed and keep the receipt\n- Request refund using: https://form.jotform.com/241480902769867");
   } else if (incomingMsg === '4') {
-    msg.body("App Troubleshooting Steps:\n- Report the issue to your EGX supervisor\n- Make sure your app is updated\n- Try force closing and reopening\n- Check your network connection\n- Log out and log back in if necessary");
-  } else if (incomingMsg === '5') {
+  msg.body("🛠️ *App Troubleshooting Steps:*\n" +
+    "1. Report the issue to your EGX supervisor\n" +
+    "2. Skip the order by entering a *fake DA number* (e.g., 123456)\n" +
+    "3. The order will move to the *bottom* of the screen\n" +
+    "4. Scroll down and tap *Resume* to make it active again\n" +
+    "5. Make sure your app is updated\n" +
+    "6. Try force closing and reopening the app\n" +
+    "7. Check your network connection\n" +
+    "8. Log out and log back in if necessary");
+} else if (incomingMsg === '5') {
     msg.body("Watch this video to fix the reverse camera:\nhttps://www.youtube.com/shorts/IK5l0EfXAYc");
   } else if (incomingMsg === '6') {
     msg.body("Accident Protocol:\n- Park in a safe place\n- Take photos/videos\n- Do NOT assume responsibility until it is confirmed\n- Contact your EGX supervisor immediately");
