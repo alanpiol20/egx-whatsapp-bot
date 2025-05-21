@@ -16,7 +16,7 @@ app.post('/webhook', (req, res) => {
   if (incomingMsg === 'hi' || incomingMsg === 'hello' || incomingMsg === 'start') {
   msg.body(
   '*Hi Driver! What happened?*\n\n' +
-  '1. 🔋 Flat Battery\n' +
+  '1. 🔋🔋 Flat Battery\n' +
   '2. 🛞 Flat Tire\n' +
   '3. ⛽ Fuel Card / Petrol Station\n' +
   '4. 📱 Woolies Go App Not Working?\n' +
