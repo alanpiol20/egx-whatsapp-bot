@@ -15,29 +15,30 @@ app.post('/webhook', (req, res) => {
 
   if (incomingMsg === 'hi' || incomingMsg === 'hello' || incomingMsg === 'start') {
   msg.body(
-    '*Hi Driver! What happened?*\n\n' +
-    '1. Flat Battery\n' +
-    '2. Flat Tire\n' +
-    '3. Fuel Card / Petrol Station\n' +
-    '4. Woolies Go App Not Working?\n' +
-    '5. Reverse Camera Not Working?\n' +
-    '6. Involved in an Accident?\n' +
-    '7. Delivery Issues\n' +
-    '8. Running Late After 9PM +60min?\n' +
-    '9. Saphyroo / Woolies Go Links\n' +
-    '10. How to Send Timesheet\n' +
-    '11. Customer Service Contact\n' +
-    '12. CBD Address List (PDF)\n' +
-    '13. Charge EV Truck\n' +
-    '14. Where Can I Park After Shift?\n' +
-    '15. Where NOT to Park\n' +
-    '16. Hazard or Near Miss Report\n' +
-    '17. Need a Toilet?\n' +
-    '18. Locker Box PIN\n' +
-    '19. Reimbursement Guide\n' +
-    '20. Delivery of Alcohol/Tobacco (ID 25+)\n\n' +
-    '👉 *Reply with the number of your issue.*'
-  );
+  '*Hi Driver! What happened?*\n\n' +
+  '1. 🔋 Flat Battery\n' +
+  '2. 🛞 Flat Tire\n' +
+  '3. ⛽ Fuel Card / Petrol Station\n' +
+  '4. 📱 Woolies Go App Not Working?\n' +
+  '5. 🎥 Reverse Camera Not Working?\n' +
+  '6. 🚨 Involved in an Accident?\n' +
+  '7. 📦 Delivery Issues\n' +
+  '8. ⏰ Running Late After 9PM +60min?\n' +
+  '9. 🔗 Saphyroo / Woolies Go Links\n' +
+  '10. 📝 How to Send Timesheet\n' +
+  '11. ☎️ Customer Service Contact\n' +
+  '12. 🗺️ CBD Address List (PDF)\n' +
+  '13. ⚡ Charge EV Truck\n' +
+  '14. 🅿️ Where Can I Park After Shift?\n' +
+  '15. 🚫 Where NOT to Park\n' +
+  '16. ⚠️ Hazard or Near Miss Report\n' +
+  '17. 🚻 Need a Toilet?\n' +
+  '18. 🔐 Locker Box PIN\n' +
+  '19. 💸 Reimbursement Guide\n' +
+  '20. 🧾 Delivery of Alcohol/Tobacco (ID 25+)\n\n' +
+  '👉 *Reply with the number of your issue.*'
+);
+
 }
  else if (incomingMsg === '1' || incomingMsg === '2') {
     msg.body(`
