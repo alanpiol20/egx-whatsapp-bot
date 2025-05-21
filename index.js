@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.post('/whatsapp', (req, res) => {
+app.post('/webhook', (req, res) => {
   const incomingMsg = req.body.Body.trim().toLowerCase();
   const twiml = new MessagingResponse();
   const msg = twiml.message();
