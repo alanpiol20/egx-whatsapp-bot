@@ -72,8 +72,16 @@ Also, please:
 } else if (incomingMsg === '5') {
     msg.body("Watch this video to fix the reverse camera:\nhttps://www.youtube.com/shorts/IK5l0EfXAYc");
   } else if (incomingMsg === '6') {
-    msg.body("Accident Protocol:\n- Park in a safe place\n- Take photos/videos\n- Do NOT assume responsibility until it is confirmed\n- Contact your EGX supervisor immediately");
-  } else if (incomingMsg === '7') {
+  msg.body("🚨 *Accident Protocol:*\n" +
+    "- Park in a safe place\n" +
+    "- Take clear photos/videos of the scene and any damage\n" +
+    "- Collect third-party info (if involved):\n" +
+    "  • Phone number\n" +
+    "  • Photo of driver’s license\n" +
+    "- Do NOT admit responsibility\n" +
+    "- Contact your EGX supervisor immediately");
+}
+ else if (incomingMsg === '7') {
     msg.body("Delivery Issue Guidelines:\n- Try parking within 500m radius\n- If customer doesn't respond after 3 calls within 5 mins: call CSH\n- If the delivery window is not open, call CSH for permission\n- Never leave unattended unless approved");
   } else if (incomingMsg === '8') {
     msg.body("Running Late (+60min after 9PM):\n- Call Customer Service to update your status\n- Then notify EGX supervisor on duty");
