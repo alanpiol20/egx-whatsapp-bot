@@ -35,9 +35,12 @@ app.post('/webhook', (req, res) => {
       '17. 💸 *Reimbursement Guide*\n' +
       '18. 🧾 *Delivery of Alcohol/Tobacco (ID 25+)*\n' +
       '19. 🔁 *Do you have order to return?*\n' +
-      '20. 🚛 *Truck Breakdown*\n\n' +
+      '20. 🚛 *Truck Breakdown*\n' +
+      '21. 🧠 *Feeling Mentally Tired?*\n\n' +
       '👉 *Reply with the number of your issue.*'
     );
+  } else if (incomingMsg === '21') {
+    msg.body("**Mental Health Support** 🧠\n\nIf you’re feeling emotionally or psychologically tired, you are not alone.\n\nYou can call *Healthy Heads in Trucks & Sheds Support Line* — a free and confidential mental health support service for truck drivers:\n\n📞 1800 931 193\n🕒 Available 24/7\n\nOr visit: https://www.healthyheads.org.au\n\nDon’t hesitate to talk to someone. Looking after your mental health is just as important as your physical safety.");
   } else if (incomingMsg === '1') {
     msg.body("**Flat Battery or Flat Tire**\n\nPlease reply with the REGO (e.g., DB21QM) so I can give you the correct Fleet Company contact.\n\nAlso, please:\n- Notify your EGX Supervisor immediately\n- Then contact the Road Side Assistance provided for your Fleet Company");
   } else if (incomingMsg.length === 6 || incomingMsg.length === 7) {
