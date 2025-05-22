@@ -58,7 +58,7 @@ app.post('/webhook', (req, res) => {
       msg.body("Sorry, I couldn't find this truck. Please check the REGO and try again.");
     }
   } else if (incomingMsg === '2') {
-    msg.body("**Fuel Up Instructions**:\n- Ensure you fill up with DIESEL only\n- Card PIN: 8431\n- Pay if needed and keep the receipt\n- Request refund using: https://form.jotform.com/241480902769867");
+    msg.body("**Fuel Up Instructions** ⛽\n\nAll trucks are **DIESEL ONLY**.\n💳 Card PIN: 8431\n\n✅ Please follow these steps:\n- Always double-check before filling the tank\n- Avoid distractions (phone) and rushing — these often lead to mistakes\n\n⚠️ If you put the wrong fuel:\n- STOP immediately\n- Turn off the engine\n- Contact your supervisor ASAP\n\n🚫 Wrong fuel can cause **$700+ in repairs**, and the **driver may be held liable**.\nWorst-case engine damage can cost **~$45,000**.\n\n🧾 Pay if needed and keep the receipt\n📩 Request refund: https://form.jotform.com/241480902769867");
   } else if (incomingMsg === '3') {
     msg.body("**App Troubleshooting Steps**:\n1. Report the issue to your EGX supervisor\n2. Skip the order by entering a *fake DA number* (e.g., 123456)\n3. The order will move to the *bottom* of the screen\n4. Scroll down and tap *Resume* to make it active again\n5. Make sure your app is updated\n6. Try force closing and reopening the app\n7. Check your network connection\n8. Log out and log back in if necessary");
   } else if (incomingMsg === '4') {
