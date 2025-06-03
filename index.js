@@ -82,7 +82,7 @@ app.post('/webhook', (req, res) => {
   } else if (incomingMsg === '13') {
     msg.body("**Where can I Park after PM shift?** 🅿️:\n- Opposite all docks\n- Park at dock 6, 7, 8 or 13\n- Beside dock 14 if possible\n- Last option: Coward Street\n\n⚠️ Do NOT park on COGGINS Place (see map for location)");
   } else if (incomingMsg === '14') {
-    msg.body("**Report a Hazard / Near Miss / Unsafe Location** ⚠️:\nFill this form: https://form.jotform.com/your-hazard-report-form");
+    msg.body("**Report a Hazard / Near Miss / Unsafe Location** ⚠️:\nFill this form: https://form.jotform.com/32838276577873");
   } else if (incomingMsg === '15') {
     msg.body("**Toilet Map** 🚻:\nhttps://toiletmap.gov.au/\n\n⏱️ Do not detour your route more than 5 minutes. If necessary, make note in your timesheet as 'hygienic break'.");
   } else if (incomingMsg === '16') {
